@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Table and Form</title>
+    <!-- Link to the Bootstrap CSS for styling -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Main container with a top margin of 5 units -->
+    <div class="container mt-5">
+        <h2 class="mb-4">Data Table</h2>
+        <!-- Bootstrap styled table with borders -->
+        <table class="table table-bordered">
+            <thead>
+                <!-- Table header row -->
+                <tr>
+                    <!-- Table header cells -->
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody id="dataTable">
+                <!-- Placeholder for dynamically added rows -->
+            </tbody>
+        </table>
+
+        <!-- Header for the form section -->
+        <h2 class="mb-4">Add New Row</h2>
+        <!-- Form for adding new rows to the table -->
+        <form id="dataForm">
+            <!-- Form group for the name input -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <!-- Text input for the name, required field -->
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <!-- Form group for the email input -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <!-- Email input for the email, required field -->
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <!-- Form group for the age input -->
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <!-- Number input for the age, required field -->
+                <input type="number" class="form-control" id="age" required>
+            </div>
+            <!-- Submit button for the form -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- jQuery library for DOM manipulation -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Popper.js library for tooltips and popovers -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JavaScript library for interactive components -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- External JavaScript file for additional functionality -->
+    <script src="index.js"></script>
+</body>
+</html>
+
